@@ -1,0 +1,162 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+.page-1 {
+  position: relative;
+}
+
+.page-1::after {
+  content: "";
+  background-image: url(./assets/Nature\ 1.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #141414;
+  padding: 1.5rem 4.3rem;
+  color: #eaeaea;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.582);
+}
+
+.navbar .content-navbar ul {
+  display: flex;
+}
+
+.navbar .content-navbar ul a {
+  margin: 0 40px;
+  color: #141414;
+  text-decoration: none;
+}
+
+.navbar .content-navbar ul a li {
+  list-style-type: none;
+  color: #eaeaea;
+}
+
+.content-navbar aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.3rem;
+  color: #eaeaea;
+  font-size: 10px;
+  position: absolute;
+  height: 89vh;
+  width: 100%;
+  z-index: -5;
+}
+
+.content-navbar aside .inside-content h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  line-height: 4.3rem;
+}
+
+.content-navbar aside .inside-content h1:nth-child(2) {
+  color: rgb(52, 219, 61);
+}
+
+.content-navbar aside .inside-content p {
+  font-size: 0.8rem;
+}
+
+.content-navbar aside .inside-content button {
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  backdrop-filter: blur(8px);
+  color: #eaeaea;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.582);
+  cursor: pointer;
+}
+
+.content-navbar aside .icon-content i {
+  font-size: 25rem;
+  color: rgb(52, 219, 61);
+}
+
+/* very big */
+@media screen and (min-width: 1800px) {
+  .navbar {
+    padding: 1.5rem 25rem;
+  }
+
+  .content-navbar aside {
+    padding: 0 25rem;
+  }
+}
+
+/* medium */
+@media screen and (max-width: 1000px) {
+  .content-navbar aside .icon-content{
+    display: none;
+  }
+
+  .navbar .content-navbar ul a li {
+    margin: 0 1.5rem;
+  }
+
+  .navbar .logo{
+    display: none;
+  }
+
+  .navbar .icon{
+    display: none;
+  }
+}
+
+/* small */
+@media screen and (max-width: 768px) {
+  .navbar .content-navbar ul a li {
+    margin: 0 1rem;
+  }
+}
+
+/* very small */
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 2rem 1.5rem;
+  }
+
+  .navbar .icon{
+    display: block;
+  }
+
+  .navbar .logo{
+    display: block;
+  }
+  
+  .navbar .content-navbar{
+    display: none;
+  }
+
+
+  .content-navbar aside {
+    padding: 0 1.5rem;
+  }
+}
