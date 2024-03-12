@@ -60,7 +60,6 @@ body {
   align-items: center;
   padding: 0 4.3rem;
   color: #eaeaea;
-  font-size: 10px;
   position: absolute;
   height: 89vh;
   width: 100%;
@@ -113,7 +112,7 @@ body {
 
 /* medium */
 @media screen and (max-width: 1000px) {
-  .content-navbar aside .icon-content{
+  .content-navbar aside .icon-content {
     display: none;
   }
 
@@ -125,11 +124,11 @@ body {
     margin: 0 1.5rem;
   }
 
-  .navbar .logo{
+  .navbar .logo {
     display: none;
   }
 
-  .navbar .icon{
+  .navbar .icon {
     display: none;
   }
 }
@@ -145,21 +144,20 @@ body {
 @media screen and (max-width: 683px) {
   .navbar {
     padding: 2rem 1.5rem;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
-  .navbar .icon{
+  .navbar .icon {
     display: block;
   }
 
-  .navbar .logo{
+  .navbar .logo {
     display: block;
   }
-  
-  .navbar .content-navbar{
+
+  .navbar .content-navbar {
     display: none;
   }
-
 
   .content-navbar aside {
     padding: 0 1.5rem;
@@ -177,7 +175,6 @@ body {
   .content-navbar aside .inside-content p {
     text-align: center;
   }
-
 }
 
 @media screen and (max-width: 395px) {
@@ -191,5 +188,27 @@ body {
   .content-navbar aside .inside-content p {
     text-align: center;
   }
+}
 
+@media screen and (max-height: 560px) {
+  .content-navbar aside {
+    height: 85vh;
+  }
+
+  .content-navbar aside .inside-content h1{
+    font-size: 3.2rem;
+    line-height: 45px;
+  }
+
+  .content-navbar aside .inside-content p{
+    font-size: 0.7rem;
+  }
+
+  .content-navbar aside .inside-content button{
+    font-size: 0.8rem;
+  }
+
+  .content-navbar aside .icon-content i {
+    font-size: 18rem;
+  }
 }
